@@ -1,0 +1,147 @@
+* {margin: 0; padding: 0;}
+html{height: 100%;}
+body {background: #cfcdac;
+   min-height: calc(100% - 116px);
+background: -moz-linear-gradient(top, #cfcdac 0%, #b8640b 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #cfcdac), color-stop(100%, #b8640b));
+background: -webkit-linear-gradient(top, #cfcdac 0%, #b8640b 100%);
+background: -o-linear-gradient(top, #cfcdac 0%, #b8640b 100%);
+background: -ms-linear-gradient(top, #cfcdac 0%, #b8640b 100%);
+background: linear-gradient(to bottom, #cfcdac 0%, #b8640b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcdac', endColorstr='#b8640b', GradientType=0 ); background-attachment: fixed; border-top: 3px solid #333; border-bottom: 3px solid #333; color: #333; font: 14px Arial; padding: 55px;}
+h1 {text-transform: uppercase; font-size: 20px; font-weight: bold; text-shadow: 0 1px 0 #fff; text-align: center;}
+a {color: #fff;font-weight: 400; text-shadow: none;}
+.subtitle {text-transform: uppercase; font-size: 16px; text-shadow: 0 1px 0 #fff; text-align: center; margin-bottom: 57px;}
+.project_list {background: #fff; border-radius: 0 0 12px 12px; box-shadow: 0 1px 3px #000; max-width: 702px; margin: 0 auto 40px;}
+.project_list .task_item:last-child {border-radius: 0 0 12px 12px;}
+.project_list .title {background: #4d84bf;
+background: -moz-linear-gradient(top, #4d84bf 0%, #385fa3 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #4d84bf), color-stop(100%, #385fa3));
+background: -webkit-linear-gradient(top, #4d84bf 0%, #385fa3 100%);
+background: -o-linear-gradient(top, #4d84bf 0%, #385fa3 100%);
+background: -ms-linear-gradient(top, #4d84bf 0%, #385fa3 100%);
+background: linear-gradient(to bottom, #4d84bf 0%, #385fa3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d84bf', endColorstr='#385fa3', GradientType=0 );
+border: 1px solid #315589; border-top: 1px solid #8cadd6; box-shadow: 0 -1px 0 #315589;
+color: #fff; padding: 15px 20px 15px 17px; font-size: 18px;}
+.project_list .title i.fa-calendar {margin-right: 12px; color: #2a384e; font-size: 25px;}
+.project_list .title form {display: inline-block; vertical-align: top;}
+.project_list .title > button {background: none; border: none; color: #98b0d2; float: right; padding: 5px; font-size: 20px; padding: 0 10px; cursor: pointer;}
+.project_list .title > button + button {border-right: 1px solid #5284bf;}
+.add_task {border-left: 1px solid #b2b2a2; border-right: 1px solid #b2b2a2; border-bottom: 1px solid #aaa; padding: 3px 11px;
+background: #e0e0e0;
+background: -moz-linear-gradient(top, #e0e0e0 0%, #cccccc 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #e0e0e0), color-stop(100%, #cccccc));
+background: -webkit-linear-gradient(top, #e0e0e0 0%, #cccccc 100%);
+background: -o-linear-gradient(top, #e0e0e0 0%, #cccccc 100%);
+background: -ms-linear-gradient(top, #e0e0e0 0%, #cccccc 100%);
+background: linear-gradient(to bottom, #e0e0e0 0%, #cccccc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#cccccc', GradientType=0 );
+}
+.add_task:before {content:"+"; display: inline-block; margin-right: 14px; font-size: 42px; line-height: 1; color: #589173; text-shadow: 0 1px 2px #000; font-weight: bold; vertical-align: middle;}
+.project_list .title form input {width: 490px; height: 30px; vertical-align: middle; padding: 0 12px;}
+.project_list .title .form_edit_project input {width: 415px; height: 30px; vertical-align: middle; padding: 0 12px;}
+.add_task input {width: 500px; height: 30px; vertical-align: middle; padding: 0 12px;}
+.project_list .title form button, .form_edit_task button, .add_task button, .form_deadline_edit button {width: 108px; height: 34px; border-radius: 0 5px 5px 0; cursor: pointer; color: #fff; text-shadow: 0 1px 2px #000; font-size: 15px; vertical-align: middle;
+background: #94cbae; border: 1px solid #447557;
+background: -moz-linear-gradient(top, #94cbae 0%, #52896a 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #94cbae), color-stop(100%, #52896a));
+background: -webkit-linear-gradient(top, #94cbae 0%, #52896a 100%);
+background: -o-linear-gradient(top, #94cbae 0%, #52896a 100%);
+background: -ms-linear-gradient(top, #94cbae 0%, #52896a 100%);
+background: linear-gradient(to bottom, #94cbae 0%, #52896a 100%);
+}
+.project_list .title form button:hover, .form_edit_task button:hover, .add_task button:hover, .form_deadline_edit button:hover {background: #52896a;
+background: -moz-linear-gradient(top, #52896a 0%, #94cbae 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #52896a), color-stop(100%, #94cbae));
+background: -webkit-linear-gradient(top, #52896a 0%, #94cbae 100%);
+background: -o-linear-gradient(top, #52896a 0%, #94cbae 100%);
+background: -ms-linear-gradient(top, #52896a 0%, #94cbae 100%);
+background: linear-gradient(to bottom, #52896a 0%, #94cbae 100%);
+}
+
+.task_item {border-left: 1px solid #b2b2a2; border-right: 1px solid #b2b2a2; border-bottom: 1px solid #e7ebea; cursor: pointer; position: relative;}
+.task_item.done * {opacity: .7;}
+.task_item.done .edit {display: none;}
+.task_item .checkbox {display: inline-block; padding: 17px 10px 17px 14px; vertical-align: middle;}
+.task_item .order {display: inline-block; width: 10px; margin-right: 10px; position: relative; border-bottom: 1px solid #999; vertical-align: middle; outline: none;}
+.task_item .order .up {position: absolute; border: 4px solid transparent; border-bottom: 4px solid #999; top: -10px; left: 1px;}
+.task_item .order .up:hover {border-bottom-color: #000;}
+.task_item .order .down {position: absolute; border: 4px solid transparent; border-top: 4px solid #999; bottom: -11px; left: 1px;}
+.task_item .order .down:hover {border-top-color: #000;}
+.task_item:nth-child(3) .order .up {display: none;}
+.task_item:last-child .order .down {display: none;}
+.task_title {display: inline-block; padding: 15px; border-left: 1px solid #efdadf; border-right: 1px solid #e7ebea; width: 510px; margin-right: 17px; vertical-align: middle; position: relative;}
+.task_title:before {border-left: 1px solid #efdadf; margin-left: 4px; content: ''; display: inline-block; position: absolute; top: 0; bottom: 0; left: 0;}
+.form_edit_task input {width: 360px; height: 30px; vertical-align: middle; padding: 0 12px;}
+.task_actions {vertical-align: middle; display: none;}
+.task_deadline {vertical-align: middle; display: none; background: #fcfed5; padding: 16px; width: 145px; border-radius: 0 12px 12px 0;}
+.task_actions button, .deadline_edit {background: none; border: none; color: #b2b2a8; display: inline-block; font-size: 13px; padding: 0 10px 0 0; vertical-align: middle; cursor: pointer;}
+.task_actions button + button {border-left: 1px solid #ccc; padding: 0 10px;}
+.task_item:hover {background: #fcfed5;}
+.task_item:hover .task_actions {display: inline-block;}
+.task_item:hover .task_deadline {display: block; position: absolute; top: 0; left: 99%;}
+.deadline_edit {margin-left: 10px;}
+.form_deadline_edit input {height: 34px;}
+.form_deadline_edit button {width: 50px; margin: 5px auto; display: block; border-radius: 5px;}
+.task_item.soon_deadline, .task_item.soon_deadline .task_deadline {background: #c08c48;}
+.task_item.already_deadline, .task_item.already_deadline .task_deadline {background: #ad0707; color:#fff;}
+.task_item.already_deadline .task_deadline {font-weight: bold;}
+
+.button {background: #3e63a1; cursor: pointer; border: 1px solid #315589; border-radius: 3px; color: #fff; font-size: 20px; font-weight: bold; width: 210px; height: 48px; margin: 0 auto 42px; display: block;}
+.button:hover {background: #315589; cursor: pointer; border: 1px solid #315589;}
+.copyright {text-align: center; color: #fff;}
+
+.error {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #f58220;
+}
+
+.regtext {
+    font-size: 13px;
+    margin: 5px 0 26px; text-align: center;
+    color: #fff;
+}
+.regtext a {color: #3e63a1;}
+
+/*= CONTAINERS
+--------------------------------------------------------*/
+#login {
+    margin: 70px auto 0;
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    background: #fff; margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px #000;
+}
+.container label {
+    color: #777;
+    font-size: 14px;
+}
+
+.container form .input,.container input[type=text],.container input[type=password],.container input[type=e] {
+    background: #fbfbfb;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 5px 6px 10px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+}
+
+.container form .input:focus {
+    border: 1px solid #f58220;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
